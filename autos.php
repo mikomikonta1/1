@@ -8,7 +8,7 @@ $success = false;
 if (!isset($_GET['name'])) {
     die("Name parameter missing");
 } elseif (isset($_POST['logout']) && $_POST['logout'] == 'Logout') {
-    header('Location: main.php');
+    header('Location: index.html');
 } elseif (isset($_POST['make']) && isset($_POST['year'])
     && isset($_POST['mileage'])) {
     if (!is_numeric($_POST['year']) || !is_numeric($_POST['mileage'])) {
